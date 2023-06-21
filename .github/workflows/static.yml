@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .continue-button {
+      display: inline-block;
+      padding: 5px 5px;
+      background-color: #3498db;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .continue-button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="feature-box col-md-6 bg-primary">
+      <h style="display: flex; text-align: center; margin-left: 50%;">Your Result </h>
+      <br>
+      <h style="align-items: center; margin: 50%;">76</h> <br>
+      <h style="text-align: center; margin-left: 50%;">of 100</h> <br>
+
+      <h style="text-align: center; margin: 50%;">Great</h> <br> <br>
+      <h style="display: flex; margin-left: 10%;">You scored higher than 65% of the people who have taken these tests.</h>
+    </div>
+    <div class="feature-box col-md-6 bg-light">
+      <div class="card">
+        <!-- Result Summary Content -->
+        <h3 class="text-primary" >Summary</h3>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><p class="text-primary ms-5" >Reaction: <span class="text-dark ms-5">86/100</span></p></li>
+          <li class="list-group-item"><p class="text-primary ms-5">Memory: <span class="text-dark ms-5">92/100</span></p></li>
+          <li class="list-group-item"><p class="text-primary  ms-5">Verbal: <span class="text-dark ms-5">61/100</span></p></li>
+          <li class="list-group-item"><p class="text-primary  ms-5">Visual: <span class="text-dark ms-5">72/100</span></p></li>
+          <li class="list-group-item"><p class= "ms-5"><a  href="#" class="continue-button">Continue</a></p></li>
+        </ul>
+        </div>
+
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Signal Internet</a>.
+  </div>
+</body>
+</html>
