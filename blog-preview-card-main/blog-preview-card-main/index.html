@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: "Figtree";
+      src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+      src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+      src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      margin-top: 20px;
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(255, 214, 101);
+      margin: 0;
+      font-family: Figtree-variable;
+    }
+
+    .card {
+      width: 26rem; 
+      padding: 3%; 
+      display: flex; 
+      flex-direction: column;
+      align-items: center; 
+      border: 2px solid black;
+      border-radius: 5%;
+      background-color: white;
+      border-bottom-width: 10px;
+      border-bottom-left-radius: 10%;
+      border-right-width: 10px;
+      border-top-right-radius: 10%;
+      border-bottom-right-radius: 3%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .figtree-bold {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 800;
+    }
+
+    .figtree-semi-bold {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 400;
+    }
+
+    .btn-custom {
+      background-color: rgb(255, 214, 101);
+    }
+    .author-info {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .author-info img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <section style="padding: 3%;">
+    <div class="card">
+      <img class="card-img-top" src="assets/images/illustration-article.svg" alt="article">
+      <div class="card-body text-left">
+        <button type="button" class="btn btn-sm btn-custom"><b>Learning</b></button>
+        <p class="card-text mt-2">Published 21 Dec 2023</p>
+        <h3 class="card-title figtree-bold">HTML & CSS foundations</h3>
+        <p class="card-text">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        <div class="author-info">
+          <img src="assets/images/image-avatar.webp" alt="image-avatar">
+          <h6 class="card-text figtree-semi-bold">Greg Hooper</h6>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a style="font-family: 'Figtree-Italic-VariableFont_wght';" href="https://sanketsharma.netlify.app/"><i>DeadSignal</i></a>.
+    </div>
+  </section>
+</body>
+</html>
